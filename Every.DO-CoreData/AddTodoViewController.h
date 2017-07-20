@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Todo;
+
+@protocol AddTodoDelegate <NSObject>
+
+-(void)addNewToDoData:(Todo *)newTodoItem;
+
+
+@end
 
 @interface AddTodoViewController : UIViewController
+@property (nonatomic, weak) id<AddTodoDelegate> todoDelegate;
+
 
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddTodoViewController.h"
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <AddTodoDelegate>
+
+
+-(void)addNewToDoData:(Todo *)newTodoItem;
 
 @end

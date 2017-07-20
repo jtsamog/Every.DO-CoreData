@@ -19,10 +19,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
   _context = self.persistentContainer.viewContext;
+  
+//  [self createData];
   return YES;
 }
+- (void)createData {
+  Todo *t1 = [[Todo alloc]initWithContext:self.context];
+
+  t1.title =@"Lecture1";
+  t1.todoDescription = @"iOS Dev: Objective-C";
+  t1.priorityNumber = 1;
+  
+  [self saveContext];
+
+  
+//    self.objects = [@[t1, t2, t3, t4] mutableCopy];
+  
+  }
 
 
+
+
+  
 - (void)applicationWillResignActive:(UIApplication *)application {
   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
   // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
