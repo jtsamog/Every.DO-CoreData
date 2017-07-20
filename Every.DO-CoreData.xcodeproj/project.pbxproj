@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		307141501F2031C0002409A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071414F1F2031C0002409A3 /* main.m */; };
 		307141531F2031C0002409A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307141521F2031C0002409A3 /* AppDelegate.m */; };
-		307141561F2031C0002409A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307141551F2031C0002409A3 /* ViewController.m */; };
 		307141591F2031C0002409A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307141571F2031C0002409A3 /* Main.storyboard */; };
 		3071415C1F2031C0002409A3 /* Every_DO_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3071415A1F2031C0002409A3 /* Every_DO_CoreData.xcdatamodeld */; };
 		3071415E1F2031C0002409A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3071415D1F2031C0002409A3 /* Assets.xcassets */; };
 		307141611F2031C0002409A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3071415F1F2031C0002409A3 /* LaunchScreen.storyboard */; };
+		3071416A1F206E27002409A3 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307141691F206E27002409A3 /* MasterViewController.m */; };
+		3071416D1F206E45002409A3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071416C1F206E45002409A3 /* DetailViewController.m */; };
+		307141701F206E71002409A3 /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071416F1F206E71002409A3 /* TodoCell.m */; };
+		307141731F207185002409A3 /* AddTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307141721F207185002409A3 /* AddTodoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +24,19 @@
 		3071414F1F2031C0002409A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		307141511F2031C0002409A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		307141521F2031C0002409A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		307141541F2031C0002409A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		307141551F2031C0002409A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		307141581F2031C0002409A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3071415B1F2031C0002409A3 /* Every_DO_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Every_DO_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		3071415D1F2031C0002409A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307141601F2031C0002409A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307141621F2031C0002409A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307141681F206E27002409A3 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		307141691F206E27002409A3 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		3071416B1F206E45002409A3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3071416C1F206E45002409A3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3071416E1F206E71002409A3 /* TodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		3071416F1F206E71002409A3 /* TodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
+		307141711F207185002409A3 /* AddTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTodoViewController.h; sourceTree = "<group>"; };
+		307141721F207185002409A3 /* AddTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTodoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				307141571F2031C0002409A3 /* Main.storyboard */,
-				307141541F2031C0002409A3 /* ViewController.h */,
-				307141551F2031C0002409A3 /* ViewController.m */,
+				3071416B1F206E45002409A3 /* DetailViewController.h */,
+				3071416C1F206E45002409A3 /* DetailViewController.m */,
+				3071416E1F206E71002409A3 /* TodoCell.h */,
+				3071416F1F206E71002409A3 /* TodoCell.m */,
+				307141681F206E27002409A3 /* MasterViewController.h */,
+				307141691F206E27002409A3 /* MasterViewController.m */,
+				307141711F207185002409A3 /* AddTodoViewController.h */,
+				307141721F207185002409A3 /* AddTodoViewController.m */,
 				3071415A1F2031C0002409A3 /* Every_DO_CoreData.xcdatamodeld */,
 				3071414E1F2031C0002409A3 /* Supporting Files */,
 			);
@@ -154,10 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307141561F2031C0002409A3 /* ViewController.m in Sources */,
 				3071415C1F2031C0002409A3 /* Every_DO_CoreData.xcdatamodeld in Sources */,
+				3071416A1F206E27002409A3 /* MasterViewController.m in Sources */,
+				307141731F207185002409A3 /* AddTodoViewController.m in Sources */,
 				307141531F2031C0002409A3 /* AppDelegate.m in Sources */,
 				307141501F2031C0002409A3 /* main.m in Sources */,
+				3071416D1F206E45002409A3 /* DetailViewController.m in Sources */,
+				307141701F206E71002409A3 /* TodoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
