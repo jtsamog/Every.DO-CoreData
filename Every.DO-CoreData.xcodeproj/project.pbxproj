@@ -60,14 +60,9 @@
 		3071414D1F2031C0002409A3 /* Every.DO-CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				307141511F2031C0002409A3 /* AppDelegate.h */,
-				307141521F2031C0002409A3 /* AppDelegate.m */,
+				307141571F2031C0002409A3 /* Main.storyboard */,
 				307141541F2031C0002409A3 /* ViewController.h */,
 				307141551F2031C0002409A3 /* ViewController.m */,
-				307141571F2031C0002409A3 /* Main.storyboard */,
-				3071415D1F2031C0002409A3 /* Assets.xcassets */,
-				3071415F1F2031C0002409A3 /* LaunchScreen.storyboard */,
-				307141621F2031C0002409A3 /* Info.plist */,
 				3071415A1F2031C0002409A3 /* Every_DO_CoreData.xcdatamodeld */,
 				3071414E1F2031C0002409A3 /* Supporting Files */,
 			);
@@ -77,6 +72,11 @@
 		3071414E1F2031C0002409A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				307141511F2031C0002409A3 /* AppDelegate.h */,
+				307141521F2031C0002409A3 /* AppDelegate.m */,
+				3071415D1F2031C0002409A3 /* Assets.xcassets */,
+				3071415F1F2031C0002409A3 /* LaunchScreen.storyboard */,
+				307141621F2031C0002409A3 /* Info.plist */,
 				3071414F1F2031C0002409A3 /* main.m */,
 			);
 			name = "Supporting Files";
